@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: white;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: black;
+        }
+      }
+      #output {
+        padding: 1rem;
+      }
+      .panel {
+        height: 100vh;
+        flex: 1;
+      }
+      .overflow-auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div class="textarea panel overflow-auto"></div>
+      <article class="panel overflow-auto markdown-body" id="output"></article>
+      <article class="panel overflow-auto markdown-body">
+        <pre style="min-height: 100%" id="debug"></pre>
+      </article>
+    </div>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

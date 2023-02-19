@@ -1,0 +1,17 @@
+{
+  "name": "emblem-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite build",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "jf908",
+  "devDependencies": {
+    "github-markdown-css": "^5.2.0",
+    "monaco-editor": "^0.35.0",
+    "vite": "^4.1.2"
+  }
+}
